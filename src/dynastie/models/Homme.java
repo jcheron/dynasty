@@ -14,9 +14,10 @@ public class Homme extends Personnage {
 	 * 
 	 * @param femme Une instance de Femme comme epouse
 	 */
-	public void epouser(Femme femme) {
+	public Homme epouser(Femme femme) {
 		this.epouse = femme;
 		femme.setDynastie(dynastie);
+		return this;
 	}
 
 }

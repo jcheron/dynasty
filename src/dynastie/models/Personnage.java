@@ -20,12 +20,14 @@ public class Personnage {
 		this.enfants = new ArrayList<Personnage>();
 	}
 
-	public void naitre(int annee) {
+	public Personnage naitre(int annee) {
 		this.naissance = annee;
+		return this;
 	}
 
-	public void mourir(int annee) {
+	public Personnage mourir(int annee) {
 		this.deces = annee;
+		return this;
 	}
 
 	public Dynastie getDynastie() {
